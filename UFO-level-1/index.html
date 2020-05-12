@@ -30,21 +30,36 @@
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading">Select filter type!</div>
               <div class="panel-body">
                 <form>
+                  <!-- Adding Search/Filter dropdown -->
+                  <select name="filter-type" id="filter-type" style="color:red">
+                    <option value="datetime" selected >Date</option>
+                    <option value="city">City</option>
+                    <option value="state">State</option>
+                    <option value="country">Country</option>
+                    <option value="shape">Shape</option>
+                    <option>-------</option>
+
+                  </select>
+                  <br><br>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <label for="datetime" style="text-align:center">Enter a value for DATE</label>
+                        <input class="form-control" id="filtertype" type="text" style="color:red" placeholder="1/11/2011">
+                        <!-- <select id="filter-type-value" name="filter-type-value"></select> -->
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                  <button id="filter-btn" type="submit" class="btn btn-default"><p class="text-center text-danger font-weight-bold">Click Me to filter!</p></button>
+                  <button type="submit"  class="btn btn-default btn-sm" onClick="refreshPage()"><p class="text-center text-primary font-weight-bold">Click Me to Refresh!</p></button>
                 </form>
+                
               </div>
             </div>
+            
           </aside>
         </div>
         <div class="col-md-10">
