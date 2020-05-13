@@ -2,8 +2,6 @@
 var tableData = data;
 var tbody = d3.select("tbody");
 
-// Display the entire dataset as default
-
 tableData.forEach((report) => {
     console.log(report);
     var row = tbody.append('tr');
@@ -15,7 +13,6 @@ tableData.forEach((report) => {
     });
 });
 
-// Select the submit button
 var submit = d3.select("#filter-btn");
 
 //Click event of datetime filter
@@ -24,10 +21,8 @@ submit.on("click", function() {
 // Remove existing table
 d3.select("tbody").html("");
 
-// Prevent the page from refreshing
 d3.event.preventDefault();
 
-// Get the value property of the input element
 var dateTime = d3.select("#datetime").property("value");
 console.log(dateTime);
 

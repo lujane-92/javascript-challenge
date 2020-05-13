@@ -1,10 +1,6 @@
 // from data.js
 var tableData = data;
-
-// Get a reference to the table body
 var tbody = d3.select("tbody");
-
-// Display the entire dataset as default
 
 tableData.forEach((report) => {
     console.log(report);
@@ -17,7 +13,6 @@ tableData.forEach((report) => {
     });
 });
 
-// Select the submit button in the html file
 var clickHandler = d3.select("#filter-btn");
 
 //Click event
@@ -29,7 +24,7 @@ d3.select("tbody").html("");
 //Prevent page from refreshing
 d3.event.preventDefault();
 
-// Get the value property of the input elements and set all text to lowercase
+// Get the value property of the input elements
 var dateTime = d3.select("#datetime").property("value");
 
 var selectedCountry = d3.select("#country").property("value").toLowerCase();
@@ -40,7 +35,6 @@ var selectedCity = d3.select("#city").property("value").toLowerCase();
 
 var selectedShape = d3.select("#shape").property("value").toLowerCase();
 
-// initialize tableData as filteredData
 filteredData = tableData;
 
 if (dateTime) {
