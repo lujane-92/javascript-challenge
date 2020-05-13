@@ -33,22 +33,33 @@
               <div class="panel-heading">Select filter type!</div>
               <div class="panel-body">
                 <form>
-                  <!-- Adding Search/Filter dropdown -->
-                  <select name="filter-type" id="filter-type" style="color:red">
-                    <option value="datetime" selected >Date</option>
-                    <option value="city">City</option>
-                    <option value="state">State</option>
-                    <option value="country">Country</option>
-                    <option value="shape">Shape</option>
-                    <option>-------</option>
-
-                  </select>
+                  
                   <br><br>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="datetime" style="text-align:center">Enter a value for DATE</label>
-                        <input class="form-control" id="filtertype" type="text" style="color:red" placeholder="1/11/2011">
+                        <input class="form-control" id="filtertype" type="text" style="color:rgb(112, 110, 110)" placeholder="1/11/2011">
+                        <!-- <select id="filter-type-value" name="filter-type-value"></select> -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="city" style="text-align:center">Enter a value for CITY</label>
+                        <input class="form-control" id="filtertype" type="text" style="color:rgb(112, 110, 110)" placeholder="benton">
+                        <!-- <select id="filter-type-value" name="filter-type-value"></select> -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="state" style="text-align:center">Enter a value for STATE</label>
+                        <input class="form-control" id="filtertype" type="text" style="color:rgb(112, 110, 110)" placeholder="ar">
+                        <!-- <select id="filter-type-value" name="filter-type-value"></select> -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Country" style="text-align:center">Enter a COUNTRY</label>
+                        <input class="form-control" id="filtertype" type="text" style="color:rgb(112, 110, 110)" placeholder="US">
+                        <!-- <select id="filter-type-value" name="filter-type-value"></select> -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="Shape" style="text-align:center">Enter a SHAPE</label>
+                        <input class="form-control" id="filtertype" type="text" style="color:rgb(112, 110, 110)" placeholder="circle">
                         <!-- <select id="filter-type-value" name="filter-type-value"></select> -->
                       </li>
                     </ul>
